@@ -1,0 +1,246 @@
+*{margin: 0;
+padding: 0;
+box-sizing:border-box;
+}
+ul li{
+    /* background-color: burlywood; */
+    height: 40px;
+    display: flex;
+    width: 100px;
+    line-height: 40px;
+        /*border: 1px solid black;*/
+    text-align: center;
+    display: block;
+}
+.menubar{
+    display: flex;
+    /* flex-direction: row; */
+    /* background-color: burlywood; */
+    justify-content: flex-start;
+    background-color: rgb(98, 112, 115);
+    align-items: center;
+    padding:0 2rem;
+        
+}
+ul li a{
+    color: rgb(11, 8, 13);
+    text-decoration: none; 
+    display: block;
+      
+}
+ul li a:hover{
+    background-color: white;
+
+}
+ul li ul li{
+    z-index: 100px;
+    position: relative;
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+.logo{
+    color: burlywood;
+    /* padding-right: 10%; */
+    /* padding-left: 5%;s */
+    width:20%;  
+}
+.logo span{color: white;}
+
+.image-container{
+    height: 80vh;
+
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.temp{
+    position: relative;
+    z-index: 30;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search{
+    background-color: white;
+       width: 30%;
+     display: flex; 
+     height: 30px;  
+    justify-content: center;
+    align-items: center;
+
+
+}
+.search input{
+    width: 85%;
+    outline:none;
+    border:none;
+    padding: 0 5px;
+}
+.search span{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search span i{
+    background-color: rgb(252, 255, 255);
+}
+.dpdn{
+    z-index: 30px;
+    position: absolute;
+    background-color: rgb(98, 112, 115);
+}
+.arr {
+    margin-top: 8px;
+    width: 305px;
+    height: 350px;
+    display: grid;
+    /* border: 3px solid black; */
+    position: relative;
+    text-align: center;
+    margin-left: 5px;
+    box-shadow: 0,0 20px,2px darkolivegreen;
+}
+#cult{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    text-align: right;
+    line-height: 20px;
+}
+#cultu{
+    line-height: 10px;
+    color: white;
+}
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to right,rgb(182, 146, 78) ,rgb(82, 82, 176));
+    transition: 3s;
+}
+ .artscul:hover{
+    transform: scale(1.1);
+    z-index: 0.2;
+    background: lightgreen;
+    box-shadow: 2px, 2px, 2px pink;
+}
+.iconart:hover{
+    transform: scale(1.1);
+    z-index: 0.2;
+    background: lightgreen;
+}
+.wallarts:hover{
+    transform: scale(1.1);
+    z-index: 0.2;
+    background: lightgreen;
+}
+.arr:hover{
+    transform: scale(1.1);
+    z-index: 0.2;
+    background: lightgreen;
+}
+.iconart{
+    margin-top: 8px;
+    margin-left: 10px;
+    display: grid;
+    /* border: 2px solid black; */
+    width: 305px;
+    height: 350px;
+    text-align: center;
+    }
+#iconima{
+    
+    width: 302px;
+    height: 300px;
+    align-items: center;
+    text-align: right;
+    line-height: 20px;
+    /* border: 1px solid black; */
+}
+.wallarts{
+    margin-top: 8px;
+    margin-left: 10px;
+    display: grid;
+    /* border: 2px solid black; */
+    width: 305px;
+    height: 350px;
+    text-align: center;
+    }
+#wallt{
+    width: 302px;
+    height: 300px;
+    align-items: center;
+    text-align: right;
+    line-height: 20px;
+}
+.artscul{
+    margin-top: 8px;
+    margin-left: 10px;
+    display: grid;
+    /* border: 2px solid black; */
+    width: 305px;
+    height: 350px;
+    text-align: center;
+    }
+#scul {
+    width: 302px;
+    height: 300px;
+    align-items: center;
+    
+    line-height: 20px;
+}
+.info{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(155, 182, 172);
+    text-align: center;
+    
+}
+.movable{
+    position: relative;
+}
+.movable::after{
+    content: 'ART GALLERY';
+    position: absolute;
+    right: 0;
+    color: rgb(10, 9, 9);
+    background-color: rgb(155, 182, 172);
+    width: 100%;
+    animation: typing 4s steps(100) infinite;
+}
+@keyframes typing{
+    to{
+         width: 16%;
+    }
+}
+.mono{
+        width: 450px;
+        margin-top: 50px;
+        height: 100px;
+}
+.read{
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: aqua;
+}
+.mono::hover{
+    transform: scale(1.1);
+    z-index: 0.2;
+    background: lightgreen;
+}
